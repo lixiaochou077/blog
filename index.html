@@ -1,10 +1,7 @@
 ---
-layout: default
+layout: home
 title: test test
 ---
-<html></html>
-　　<h2>{{ page.title }}</h2>
-　　<p>xixihah</p>
 　　<ul>
 　　　　{% for post in site.posts %}
 　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>

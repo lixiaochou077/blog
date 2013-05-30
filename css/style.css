@@ -253,3 +253,7 @@ footer {
     color:#444;
   }
 }
+
+.wrapper p a{
+    margin-right: 10px;
+}
