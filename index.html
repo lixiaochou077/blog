@@ -1,11 +1,11 @@
 ---
 layout: home
-title: sitename
+title: site name
 ---
     <ul>
 　　　　 {% for post in site.posts %}
         <h3 class="excerpt"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-　　　　 <p class="excerpt">
+　　　　 <p class="excerpt excerpt-p">
             {{ post.content | strip_html | truncatewords: 100 }} &nbsp;
         </p>
         <p class="morelink">
