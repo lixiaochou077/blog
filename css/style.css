@@ -7,7 +7,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#ee9285;
+  color:#c30;
   margin:0 0 20px;
 }
 
@@ -32,9 +32,12 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#ee9285;
+  color:#c30;
   font-weight:400;
   text-decoration:none;
+}
+a:hover{
+    color: #f30;
 }
 
 a small {
