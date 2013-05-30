@@ -7,3 +7,12 @@ title: test test
 　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　　　{% endfor %}
 　　</ul>
+
+    <ul>
+　　　　 {% for post in site.posts %}
+　　　　      <p class="excerpt">
+                {{ post.content | strip_html | truncatewords: 100 }} &nbsp;
+                <a href="{{ post.url }}" class="read-more">read more</a>
+             </p>
+        {% endfor %}
+　　</ul>
