@@ -11,6 +11,6 @@ title: site name
         <p class="morelink">
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">read more</a>
         </p>
-        <p>{{ page.excerpt }}</p>
+        <p>{{ post.content | split: '<!-- more -->' | first }}</p>
         {% endfor %}
 　　</ul>
