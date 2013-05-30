@@ -8,7 +8,7 @@ title: site name
 　　　　 <p class="excerpt excerpt-p">
             {{ post.content | strip_html | truncatewords: 100 }} &nbsp;
         </p>
-        <p class="morelink">
+        <p class="morelink">{{ page.excerpt }}
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">read more</a>
         </p>
         {% endfor %}
