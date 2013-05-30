@@ -259,3 +259,6 @@ footer {
 .wrapper p a{
     margin-right: 10px;
 }
+.morelink a{
+    margin: 0;      
+}
