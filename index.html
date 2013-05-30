@@ -6,7 +6,7 @@ title: 我是标题
 　　　　 {% for post in site.posts %}
         <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
 　　　　 <p>
-            {{ post.content | strip_html | truncatewords: 100 }} &nbsp;
+            {{ post.summary }} 
         </p>
         <p class="morelink">
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">read more</a>
