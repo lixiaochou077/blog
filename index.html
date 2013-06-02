@@ -5,9 +5,9 @@ title: 抽
     <ul>
 　　　　 {% for post in site.posts %}
         <h3 class="excerpt"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-　　　　 <p class="excerpt">
+　　　　 <div class="excerpt">
             {{ post.content | split: '<!-- more -->' | first }}
             <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">read more...</a>
-        </p>
+        </div>
         {% endfor %}
 　　</ul>
